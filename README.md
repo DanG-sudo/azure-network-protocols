@@ -25,8 +25,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
  1. Understanding Network Security Groups (NSGs)
 
-Define NSGs: Clearly explain that NSGs are used in Azure to control inbound and outbound traffic to and from Azure resources (like VMs).
-Explain Scope of NSGs: Describe how NSGs can be applied to:
+NSGs are used in Azure to control inbound and outbound traffic to and from Azure resources (like VMs).
+NSGs can be applied to:
 
     Subnets: Securing multiple VMs within a subnet.
     Network Interfaces (NICs): Securing specific VMs within the same subnet.
@@ -43,6 +43,8 @@ a. Create and Associate NSGs
 Create NSG in Azure Portal:
 
     Navigate to Networking > Network Security Groups > + Create.
+   ![create-network-security-group](https://github.com/user-attachments/assets/aa2a5a1d-23bc-4438-993e-f58a750fdc19)
+
     Define a name (e.g., VM-Security-NSG) and associate it with a resource group and region.
 
     Associate NSG to Subnet or NIC:
@@ -52,7 +54,7 @@ Create NSG in Azure Portal:
 
 Inbound Rules:
 
-    Define application-specific rules (e.g., HTTP, RDP, SSH).
+   Application-specific rules in NSGs are inbound or outbound rules configured to allow or deny traffic for specific applications, such as HTTP (port 80), HTTPS (port 443), SSH (port 22), or RDP (port 3389), based on their protocol and port requirements.
     
   ![view-security-rule-details](https://github.com/user-attachments/assets/0e38022e-b96d-4990-8f1b-2d3d9ad7eb65)
 
